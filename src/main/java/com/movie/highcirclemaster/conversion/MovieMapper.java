@@ -21,7 +21,8 @@ public class MovieMapper {
 //                movie.getGenres(),
                 movie.getRating(),
                 movie.getRuntime(),
-                movie.getLanguage()
+                movie.getLanguage(),
+                movie.getPopularity()
         );
     }
 
@@ -31,7 +32,8 @@ public class MovieMapper {
                 movie.getTitle(),
                 movie.getReleaseDate().format(dateFormatter),
                 movie.getPosterUrl(),
-                movie.getRating()
+                movie.getRating(),
+                movie.getPopularity()
         );
     }
 }

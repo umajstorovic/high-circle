@@ -17,6 +17,8 @@ public enum MovieFilters implements MovieFilter {
     RUNTIME_LT("runtime", MovieSpecification::runtimeLessThanOrEqual),
     RATING_GTE("rating", MovieSpecification::ratingGreaterThanOrEqual),
     GENRE("genre", MovieSpecification::genreContains),
+    POPULARITY_GTE("popularity", MovieSpecification::popularityGreaterThanOrEqual),
+
 
     ;
     private final String filterName;

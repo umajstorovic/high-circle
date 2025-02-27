@@ -43,4 +43,6 @@ public class Movie {
     private int runtime;
 
     private String language;
+
+    private int popularity;
 }

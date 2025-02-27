@@ -23,6 +23,10 @@ public class MovieSpecification {
         return (root, query, criteriaBuilder) -> criteriaBuilder.greaterThanOrEqualTo(root.get("rating"), rating);
     }
 
+    public static Specification<Movie> popularityGreaterThanOrEqual(String popularity) {
+        return (root, query, criteriaBuilder) -> criteriaBuilder.greaterThanOrEqualTo(root.get("popularity"), popularity);
+    }
+
     public static Specification<Movie> runtimeLessThanOrEqual(String runtime) {
         return (root, query, criteriaBuilder) -> criteriaBuilder.lessThanOrEqualTo(root.get("runtime"), runtime);
     }

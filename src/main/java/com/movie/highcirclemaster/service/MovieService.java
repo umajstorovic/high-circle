@@ -29,7 +29,7 @@ public class MovieService {
     private final MovieMapper movieMapper;
 
     public List<MovieSummaryDTO> getPopularMovies(int page, int size) {
-        Pageable pageable = PageRequest.of(page - 1, size).withSort(Sort.by("rating").descending());
+        Pageable pageable = PageRequest.of(page - 1, size).withSort(Sort.by("popularity").descending());
         Page<Movie> moviePage = movieRepository.findAll(pageable);
 
         return moviePage.getContent()

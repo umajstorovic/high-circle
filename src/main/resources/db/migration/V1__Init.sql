@@ -8,5 +8,6 @@ CREATE TABLE movies (
                         genres TEXT[],
                         rating DOUBLE PRECISION,
                         runtime INTEGER,
-                        language VARCHAR(50)
+                        language VARCHAR(50),
+                        popularity INTEGER
 );

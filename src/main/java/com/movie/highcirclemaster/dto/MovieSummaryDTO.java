@@ -10,5 +10,6 @@ public record MovieSummaryDTO(
         String title,
         String releaseDate,
         String posterUrl,
-        double rating
+        double rating,
+        int popularity
 ) {}

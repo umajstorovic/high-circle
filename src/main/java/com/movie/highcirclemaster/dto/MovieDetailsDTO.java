@@ -11,5 +11,6 @@ public record MovieDetailsDTO(
 //        List<String> genres,
         double rating,
         int runtime,
-        String language
+        String language,
+        int popularity
 ) {}
